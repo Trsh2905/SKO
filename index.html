@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="SKZ.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabbed Menu - SKO</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Franklin+Gothic+Book&display=swap');
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Menu - SKO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Franklin+Gothic+Book&display=swap');
+
+        body { 
+            
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f0f0; 
+            
+        }
+        
+
+        .video-border {
+            border: 5px solid #fff; /* Border color and width */
+            border-radius: 10px; /* Optional: round the corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow */
+        }
+        .rotated-image {
+            transform: rotate(-90deg); /* Rotates the image 90 degrees to the left */
+        }
+
+        .tab-container { 
+            display: flex; 
+        }
+        .tabs { 
+            display: flex; 
+            flex-direction: column; 
+            margin: 50px; 
+        }
+        .tab { 
+            padding: 20px 70px; /* Increase padding to make buttons bigger */
+            cursor: pointer; 
+            border: 1px solid #ccc; 
+            margin-bottom: 2px; 
+            //margin-left: 55px; 
+            //margin-right: 55px; 
+           // background-color: #fff; 
+            font-size: 30px; /* Increase font size */
+            z-index: 1;
+            color: white; /* Text color changed to white */
+            font-family: 'Futura', sans-serif; 
+            display: block;
+            width: 300px
+            text-align: left;
+        }
+        .tab.active { 
+            background-color: #336699; 
+            color: #fff; 
+            z-index: 1;
+           // font-size: 32px;
+        }
+        .content { 
+            display: none; 
+            padding: 20px; 
+           // border: 1px solid #ccc; 
+            margin-top: 20px; 
+            width: calc(100% - 140px); /* Adjust width to account for tabs and margin */
+            height: calc(100vh - 60px); /* Adjust height to fit viewport and margin */
+
+           // background-color: #fff; 
+            font-family: 'Franklin Gothic Book', sans-serif;
+            z-index: 1;
+            overflow: auto; /* Makes the content scrollable */
+        }
+        .content.active { 
+            display: block; 
+            z-index: 1;
+
+        }
+        .content p { 
+            font-size: 25px; /* Increase font size of paragraphs */
+            z-index: 1;
+            color: white; /* Text color changed to white */
+        }
+        .content h1 {
+          
+            z-index: 1;
+            color: white;
+
+        }
+
+        .content h2 {
+
+          font-size: 30px; /* Increase font size */
+            z-index: 1;
+            color: white;
+        }
+
+        .content h1 {
+          font-size: 35px; /* Increase font size */
+            z-index: 1;
+            color: white;
+
+        }
+        #particle-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        .content h3 {
+
+font-size: 55px; /* Increase font size */
+  z-index: 1;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif 
+}
+
+.content h4 {
+
+font-size: 25px; /* Increase font size */
+  z-index: 1;
+  color: white;
+  font-family: 'Futura', sans-serif; 
+}
+  </style>
+</head>
+<body>
+  <div class="tab-container">
+      <div class="tabs">
+        <div class="tab active" onclick="showContent(0)">SKO</div>
+          <div class="tab" onclick="showContent(1)">ACTIVITIES</div>
+          <div class="tab" onclick="showContent(2)">ASSIGNMENTS</div>
+          <div class="tab" onclick="showContent(3)">CASE STUDIES</div>
+          <div class="tab" onclick="showContent(4)">RESOURCES</div>
+          <div class="tab" onclick="showContent(5)">REFLECTION</div>
+          <div class="tab" onclick="showContent(6)">CODE</div>
+      </div>
+      <div class="content active" id="content0">
+        <h3>CODEWORDS: Creative Coding and Typography</h3>
+        <h3>Student Knowledge Object</h3>
+        <h4>Trisha Bedi ~ S3997674</h4>
+    </div>
+      <div class="content" id="content1">
+          <h1><u>Activities</u></h1>
+          <h2>Crazy 8</h2>
+          <p>It was one of the initial activities in our tutorials, helping us quickly and effectively express ideas. We had one minute per idea to sketch out multiple designs, allowing us to explore and identify the ones we liked most. This helped me explore various thought processes in a short amount of time.
+
+            </p><p>This method was used twice first for the major project and then later on for the SKO. I used this technique personally as well as it was an effective method to drain out the initial ideas before reaching to a final outcome. 
+            </p>
+            <img src="data/1.jpg"  width="400" >
+            <h2>Game Play</h2>
+          <p>This activity showed us how a paper prototype should work. We chose an existing game and made a working prototype in about 15 to 20 minutes. We explored how each group showcased their work in creative ways, as there were no such restrictions for the activity. </p>
+          <img src="data/7.jpg"  width="500">
+          <img src="data/5.jpg"  width="500">
+          <h2>Instructions and sketch</h2>
+          <p>This activity allowed us to see how a computer would react to our direct commands. We created a simple sketch and wrote down instructions for replicating it. We then gave these instructions to a classmate, who attempted to recreate the initial sketch based solely on the written directions.
+          </p>
+          <img src="data/6.jpg"  width="500">
+          <h2>Paper prototype</h2>
+          <p>Presenting our prototypes to the class allowed us to observe how people interacted with our designs. This provided insights into possible improvements and ways to make our design more communicative. Before starting with the code for our major project, we got a fair idea of how our users would react to the webpage. 
+          </p>
+          <img src="data/2.jpg"  width="550"  height="300" >
+        </div>
+      <div class="content" id="content2">
+        <h1><u>Assignment</u></h1>
+        <h2>Paper Prototype</h2>
+        <p>Throughout this semester, we had three assignments, including this final one. The first assignment was to create a paper prototype of our major project concepts. This was a relatively light assignment, as it coincided with our learnings in coding. Through this exercise, we focused on developing a rough, tangible representation of our ideas, allowing us to present and discuss them with professors and classmates before diving into the actual code. This approach helped us visually brainstorm, encouraging a smooth flow of ideas and refining our thought processes before committing to a final idea. 
+        </p>
+        
+        <video width="900" controls class="video-border">
+          <source src="data/16.mp4" type="video/mp4" >
+      </video>
+        <h2><u>Major Porject</u></h2>
+        <p>In Assignment 2, we took our paper prototypes and brought them to life through code. This task lets us push the boundaries of traditional design, visualizing our concepts interactively and exploring new personal interests in coding. It challenged us to think beyond the basics, asking us to consider what elements could enhance a simple website, making it more dynamic and engaging for the user. This gradual progression helped bridge foundational design skills with new interactive experiences. This project taught me a lot through code and enhanced my understanding of ser experiences as well, as we saw how our classmates integrated with our projects in real-time.
+        </p>
+        <video width="1000" controls class="video-border">
+          <source src="data/20.mp4" type="video/mp4" >
+      </video>
+      </div>
+      <div class="content" id="content3">
+          <h1><u>Case Studies</u></h1>
+          <h2>Andreion de Castro
+          </h2>
+          <p>He is one of the graphic designers I was inspired by while doing my major project. He is a freelancer who specialises in motion, type, identity, and creative coding. He has worked for clients including O2, Prada Beauty, The Verge, Grammys, Workplace, Discover.
+          </p>
+          <p>He has experience working with different studios, such as Public Library, VCCP London, Bielke&Yang, and Tomorrow Bureau, in a range of fields, including commercial, digital, and technology.</p>
+          <p>His style really resonated with me; it struck a balance between simplicity and impact that I found both inspiring and memorable. The minimalistic approach made each element feel purposeful yet still conveyed a strong, effective message.
+          </p>
+          <img src="data/8.jpg"  width="500">
+          <p><a href=" https://www.behance.net/andreiongd" target="_blank">behance </a></p>
+          <h2>Anita Dongre</h2>
+          <p>Anita Dongre's journey inspired me, even though she is in the fashion industry, she has a great mix of traditional and western culture in her works that I find very amusing. </p>
+          <p> She has successfully built a brand that represents the best of Indian craftsmanship while championing sustainability and women's empowerment. Through her innovative designs and ethical practices. Her work goes beyond creating beautiful garments; it encompasses making a meaningful social impact and preserving the rich cultural heritage of India. Anita Dongre's legacy is one of artistry, responsibility, and empowerment, making her a true icon in the world of fashion.</p> 
+          <img src="data/9.jpg"  width="500">     
+          <p><a href="https://www.anitadongre.com/" target="_blank">website </a></p>
+        </div>
+      <div class="content" id="content4">
+        <h1><u>Resources</u></h1>
+        <h2>Font</h2>
+        <p>Futura</p>
+        <p>Franklin Gothic Book</p>
+        <p></p>
+        <h2>Code</h2>
+        <p>P5.js</p>
+        <p>GitHub Copilot</p>
+        <p>Tutorials</p>
+        <p>W3school</p>
+      </div>
+      <div class="content" id="content5">
+        <h1><u>Reflection</u></h1>
+        <p> 
+          The studio, Codewords: Creative Coding and Typography, explored code and type across various forms, going far beyond my initial expectations. I had assumed we’d focus on website building and possibly app development, but this course offered much more. Each interactive class included multiple examples, case studies, and activities that tested our understanding of design elements, refining my design process and boosting my time management skills.
+          
+        </p><p>We immersed ourselves in user interactions with websites and learned how subjective user interpretations can be. In one exercise, we each selected our favorite webpage from a set, revealing the wide variety of individual design preferences in just one classroom. Morning classes centered around researching and understanding different designers and using activities to illustrate how our code would function. Afternoon sessions were focused on coding, primarily in Processing(P5.js) and Visual Studio Code, where we explored diverse techniques like adding sound, interactivity, and animations to simple texts, which kept each class engaging and unique.
+          
+          </p><p>This studio taught me something new each week, pushing me to broaden my coding knowledge. I discovered WEBGL while working on my major project, as I wanted my final webpage to feature three-dimensional elements to enhance the visual aspect. These assignments allowed me to dive into my interests while giving me the creative freedom to communicate whatever I wanted to convey to users. This flexibility enabled me to express my ideas more properly and tailor my work to reflect my own vision.
+          
+          </p><p>Through these assignments, I gained valuable techniques and fresh approaches to presenting my designs, which I’ll continue to incorporate into my practice. Integrating code into my work has expanded my ability to create interactive, engaging designs. This will further help me with web designing and enable me to produce more responsive layouts. The experience of progressing from initial research to outcomes taught me the full design process, while the feedback at each stage kept me focused and efficient, allowing me to reach each milestone on time. Overall, this experience has improved my design approach, strengthened my skill set, and expanded my understanding of coding and design.
+          </p>
+      </div>
+      <div class="content" id="content6">
+        <h1><u>Code</u></h1>
+        <h2>Crazy 8 - HTML</h2>
+        <p>In week one we learned the basics of code on visual code. We were asked to choose a specific phrase and try to recreate the Crazy 8 that we had drawn in class. 
+        </p>
+        <img src="data/13.jpg"  width="500">
+        <h2>Circles</h2> 
+        <p> In the following class, we began working with Processing to make our code more interactive. The first technique we learned involved creating a shape or object that followed the cursor, allowing the user to sketch freely on a black canvas by simply moving the cursor. This code tracked every movement, creating an experience where users could interact directly with the design, almost like drawing on a digital page.
+        </p>
+        <img src="data/12.jpg"  width="500"> 
+        <h2>Portrait</h2>
+        <p>We were given the task of creating a portrait of ourselves through only shape, By coding the placements of the elements on a webpage we understood the parameters in a site. This gave us freedom to explore the shapes in 2d and show what we have understood this far in code.
+        </p>
+        <img src="data/10.jpg"  width="500"> 
+        <h2>Mouse functions</h2>
+        <p>This website also tracked the movement of the cursor but made us understand transparency and on click and mouse press functions. This helped us later to make our web pages more responsive. We also learned how to move text around.
+        </p>
+        <img src="data/11.jpg"  width="500">
+        <h2>Sound</h2>
+        <p>There was a code where we learned how to add sound to a page and adjust the volume through the movements of the user. The need for sound in a web page was introduced. It made the page more engaging.
+        </p>
+        <h2>Wiggling letters</h2>
+        <p>A way to show movement in the letters by themselves, so that there is constant movement on the webpage.
+        </p>
+       
+        
+        <video width="900" controls class="video-border">
+          <source src="data/17.mp4" type="video/mp4" >
+      </video>
+      <h2>Work in Progress</h2>
+      <video width="900" controls class="video-border">
+        <source src="data/18.mp4" type="video/mp4" >
+    </video>
+    </div>
+    
+  </div>
+  <script>
+      function showContent(index) {
+          let tabs = document.querySelectorAll('.tab');
+          let contents = document.querySelectorAll('.content');
+          tabs.forEach((tab, i) => {
+              tab.classList.toggle('active', i === index);
+              contents[i].classList.toggle('active', i === index);
+          });
+      }
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
